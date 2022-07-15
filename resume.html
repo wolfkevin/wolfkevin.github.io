@@ -1,0 +1,721 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/html">
+ 
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+   <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+   <title>Kevin Wolf</title>
+   <style>
+       body {
+           background: #fff;
+           font: 20px 'Lato', Helvetica, Arial, sans-serif;
+           line-height: 1.4;
+           margin: 0 0;
+           margin-bottom: 100px;
+       }
+ 
+       em {
+           color: #999;
+       }
+ 
+       li {
+           padding-top: 2.5px;
+       }
+ 
+       p {
+           /* line-height: 1.6; */
+           margin-top: 5px;
+           font-size: 125%;
+           padding: 0;
+           margin-bottom: 0;
+       }
+ 
+       a {
+           color: #2C85B1;
+           text-decoration: none;
+           font-weight: 400;
+       }
+ 
+       ul {
+           margin-top: auto;
+           margin-bottom: 0;
+       }
+ 
+       br {
+           display: block;
+           margin: 5px 0;
+           line-height: 5px;
+       }
+ 
+       #resume {
+           margin: 2em 2em 2em 2.5em;
+           max-width: 760px;
+       }
+ 
+       /* Resume heading */
+       .heading header {
+           margin-bottom: 0.5em;
+       }
+ 
+       .heading header h1 {
+           display: inline;
+           font-size: 300%;
+           font-weight: 600;
+       }
+ 
+       .heading header h2 {
+           font-size: 150%;
+           /* margin: 0;*/
+           font-weight: 400;
+       }
+ 
+       .heading header .contact {
+           float: right;
+           font-size: 110%;
+       }
+ 
+       .heading header .contact .detail {
+           float: right;
+           display: inline;
+       }
+ 
+       /* section / line breaks */
+       section h2 {
+           font-size: 150%;
+           text-transform: uppercase;
+           color: #BC1B39;
+           margin: 0.2px;
+           margin-bottom: 1px;
+           font-weight: 500;
+       }
+ 
+       /* Experience items */
+       .item {
+           margin: 0 0 0.5rem;
+           padding-bottom: 8px;
+           border-bottom: 1px solid #D3D3D3;
+       }
+ 
+       .item:last-child {
+           border-bottom: none;
+       }
+ 
+       .item header h3 {
+           font-size: 125%;
+           margin: 0.1em 0.5em 0.1em 0;
+           display: inline-block;
+           font-weight: 600;
+       }
+ 
+       .item header a {
+           display: inline-block;
+       }
+ 
+       .item .position {
+           font-weight: 600;
+           font-size: 120%;
+           margin: 0.1em 0.5em 0.1em 0;
+           margin-left: 9.5px;
+       }
+ 
+       .item .datePeriod {
+           display: inline-block;
+           font: 14px 'Lato', Helvetica, Arial, sans-serif;
+           float: right;
+           color: #6B6B6B;
+           vertical-align: bottom;
+       }
+ 
+       .item .highlights,
+       .item .summary {
+           list-style: square;
+           font-size: 110%;
+       }
+ 
+       #skills,
+       #education,
+       #volunteering,
+       #clubs {
+           width: 50%;
+           display: inline-block;
+       }
+ 
+       #education,
+       #volunteering {
+           float: left;
+           width: 50% !important;
+       }
+ 
+       #volunteering.item {
+           border-bottom: .75px solid #D3D3D3;
+       }
+ 
+       /* skills */
+       #skills .item {
+           margin: 0.5em 0;
+           padding: 0 0 0.5em;
+           font-size: 99%;
+       }
+ 
+       #skills .item .name {
+           font-weight: 600;
+           font-size: 110%;
+           display: inline-block;
+           text-transform: uppercase;
+           margin: 0 1em 0 0;
+           width: 24%;
+           vertical-align: top;
+       }
+ 
+       #skills .item .keywords {
+           display: inline-block;
+           width: 70%;
+           vertical-align: top;
+       }
+ 
+       /* education */
+       #education .item {
+           display: inline-block;
+           vertical-align: top;
+           width: 100%;
+           border-bottom: 0;
+       }
+ 
+       .line-break {
+           border-bottom: 1px solid #F2EBEC;
+       }
+ 
+       .pad-right {
+           padding-right: 10px;
+       }
+ 
+       .pad-summary li {
+           padding-right: 25px;
+       }
+ 
+       .inline-block {
+           display: inline-block;
+           width: 100%;
+       }
+   </style>
+   <style media="print">
+       body {
+           font-size: 12px;
+       }
+   </style>
+   <link href='https://fonts.googleapis.com/css?family=Raleway:300,400,500' rel='stylesheet' type='text/css'>
+</head>
+ 
+<body>
+   <section id="resume">
+       <section class="heading">
+           <header>
+               <h1>Kevin Wolf</h1>
+               <div class="contact">
+                   <br>
+                   <span class="detail">
+                       <a href="tel:+1-201-397-3591">+1-201-397-3591</a>
+                   </span>
+                   <br>
+                   <span class="detail">
+                       <a href="https://github.com/wolfkevin">github.com/wolfkevin</a>
+                   </span>
+                   <br>
+                   <span class="detail">
+                       <a href="mailto:kevinmwolf@gmail.com">kevinmwolf@gmail.com</a>
+                   </span>
+                   <br>
+                   <span class="detail">
+                       <a href="https://www.linkedin.com/in/kevinmwolf">linkedin.com/in/kevinmwolf</a>
+                   </span>
+               </div>
+           </header>
+       </section>
+       <section class="experience">
+           <!-- <span>Passionate and engaging Product Manager with strong technical experience.</span> -->
+           <!-- <br>Excellent presentational, interpersonal, and analytical skills with business acumen. -->
+           <br>
+       </section>
+       <div class="inline-block">
+           <section id="skills">
+               <h2>Skills</h2>
+               <div class="item" style="margin-top: 0">
+                   <div class="name">
+                       Product
+                   </div>
+                   <div class="keywords">
+                       Sprint Ceremonies, User Research, OKRs, Roadmap, API Documentation, Press Releases
+                       <!-- Roadmap -->
+                       <!-- OKRS -->
+                       <!-- , Lean Startup -->
+                       <!-- CAD,
+                    Balsamiq,
+                    Hook Framework -->
+                       <!-- <a href="https://www.wikiwand.com/en/Nonviolent_Communication">NVC</a> -->
+                   </div>
+               </div>
+               <div class="item">
+                   <div class="name">
+                       Technical
+                   </div>
+                   <div class="keywords">
+                       SQL,
+                       GraphQL,
+                       Google Cloud,
+                       <!-- GCP -->
+                       Python,
+                       JS,
+                       Airflow,
+                       DBT,
+                       PostGIS,
+                       HTML,
+                       CSS, Jira
+                       <!-- C++,
+                    Go -->
+                   </div>
+               </div>
+               <!-- <div class="item">
+              <div class="name">
+                 Front End
+              </div>
+              <div class="keywords">
+                    HTML,
+                    CSS,
+                    JS,
+                    React,
+                    CAD,
+                    Unity
+              </div>
+              </div> -->
+               <div class="item" style="padding-bottom: 0px; margin-bottom: 0px;">
+                   <div class="name">
+                       Other
+                   </div>
+                   <div class="keywords">
+                       Fluent Hebrew,
+                       Audiobooking (20+ bks/yr),
+                       Professional CNC Woodworking
+                   </div>
+               </div>
+           </section>
+           <section id="education">
+               <h2>Education</h2>
+               <div class="item">
+                   <header>
+                       <strong style="font-size: 115%;">UNIVERSITY OF MICHIGAN, ANN ARBOR</strong>
+                       <br>
+                   </header>
+                   <div class="qualification" style="font-size: 115%;">
+                       <span class="studyType">
+                           Bachelor of Science - <i>Computer Science</i><br>
+                           <!-- | <strong>GPA</strong>: 3.2 -->
+                       </span>
+                       <span class="dateStart">
+                           Sep 2014 - Dec 2017
+                       </span>
+                       <br><br><span style="font-size: 90%;">Completed online courses in: <a
+                               href="https://www.coursera.org/learn/uva-darden-digital-product-management">Digital
+                               Product Management</a>,
+                           <br><a
+                               href="https://learn.producttalk.org/p/getting-started-with-continuous-discovery">Continuous
+                               Product Discovery</a>,
+                           <a href="https://learn.producttalk.org/p/continuous-interviewing-feb2020">Continuous
+                               Interviewing</a></span>
+                   </div>
+               </div>
+               <section class="experience">
+                   <h2>Work Experience</h2>
+               </section>
+       </div>
+       <section class="experience">
+           <section class="item">
+               <span class="datePeriod pad-right">
+                   New York, NY | Jan 2020 - Present
+               </span>
+               <header>
+                   <h3 class="name"><a href="https://cherre.com/">Cherre</a></h3>
+                   |<span class="position">Product Manager</span>&nbsp;</span>
+               </header>
+               <ul class="highlights pad-right">
+                   <li>Led a team of 5 engineers in Agile sprint ceremonies by writing user stories with testable acceptance criteria,
+                       maintaining a well groomed backlog, formulating measurable OKRs, and sharing a running 3 month roadmap  </li>
+                   <li>Envisioned and advocated for a major refactor and expansion of core data services
+                       to upper management through quantifying cost of delay, limiting work to a tight scope, and crafting sample press release </li>
+                   <li>Aggregated product requirements for improved data service by conducting user interviews,
+                       collaborating with internal product managers, and analyzing inputs and outputs of 2.7 million API
+                       requests</li>
+                   <li>Scoped and managed product implementations for 7 enterprise clients by detailing ERDs
+                       of available tables, drawing diagrams of data transformations, and
+                       providing GraphQL code snippets for retrieving information </li>                      
+                   <li>Sourced and evaluated providers of national and international geospatial data using BigQuery Geo Viz and PostGIS functions to determine accuracy and coverage of
+                       shapefiles </li>
+                   <!-- <li>Designed and delivered an entity resolution data service to optimize DAG speed, simplify
+                       developer access, and iterate on the standardization engine without creating breaking changes
+                       for customers </li>
+                   <li>Agile, Roadmap, collaborate with other developers, analyze complex data sets, product vision, new
+                       features, data driven product decisions</li> -->
+ 
+               </ul>
+           </section>
+           <section class="item">
+               <span class="datePeriod pad-right">
+                   New York, NY | Aug 2019 - Nov 2019
+               </span>
+               <header>
+                   <h3 class="name"><a href="https://www.goodtoday.org/">Good Today</a></h3>|<span
+                       class="position">Product Manager</span>&nbsp;(Contracted)</span>
+               </header>
+               <ul class="highlights pad-right">
+                   <li>Defined, launched, and tested MVP of variable response messages, resulting in 5% higher user
+                       engagement
+                   <li>Built a data pipeline with SQL to rank 35+ clients' health and initiated customer success
+                       process which boosted engagement by 49% and uncovered customer pain points
+                   <li>Established a scalable onboarding, sales, and customer success pipelines to successfully onboard
+                       customers 40% faster, track new leads, and conduct 2 user interviews per week
+           </section>
+           <section class="item">
+               <span class="datePeriod pad-right">
+                   Jerusalem, Israel | Jan 2017 - Jul 2019
+               </span>
+               <header>
+                   <h3 class="name"><a href="https://www.sefaria.org/">Sefaria</a></h3>|<span class="position">Product
+                       Engineer</span>
+               </header>
+               <!-- <div class="summary">
+           <p>Sefaria is assembling a library of Jewish texts and their interconnections, in Hebrew and in translation to create new, interactive interfaces for more engaging text.</p>
+           </div> -->
+               <ul class="highlights pad-right">
+                   <li>Drove SDLC through planning, managing, and executing product development and implementation for
+                       3 dictionaries with >100,000 entries which was the "biggest release of the year" for the site
+                   <li>Wrote product requirements and roadmap so Agile sprint cycles would align with engineering
+                       output
+                       <!-- <li>Strategized and generated  in React to collect data from MongoDB and then performed QA testing to fix UI and correct 19% of results -->
+                   <li>Analyzed 46,000+ dictionary browsing sessions in MongoDB to inform prioritization, then utilized
+                       NLP algorithms to provide better results for 19% of API searches
+                       <!-- focus on adding intra-text links by improving search API and using  -->
+               </ul>
+           </section>
+       </section>
+       <!-- </section> -->
+       <h2>Leadership</h2>
+       <section id="volunteering">
+           <div class="item pad-right" style="padding-bottom: 10px; padding-right: 40px">
+               <header>
+                   <h3 class="name" style="vertical-align:middle"><a href="https://jewishexperience.org">MJE</a></h3>
+                   |<span class="position">
+                       Speaker
+                   </span>
+                   <span class="datePeriod" style="vertical-align:middle; padding-right: 30px">
+                       Jun 2019 - Present
+                   </span>
+               </header>
+               <span class="summary">
+                   <!-- <li>Envisioned and built a new national brand for college Judaism that is student run, crowd sourced and modern.</li> -->
+                   <!-- <li>Hosted over 40 people weekly for a vibrant and active discussion on Jewish ethics and its relation to our modern lives.</li> -->
+                   <li>Present weekly to ~80 young professionals on sources to make technical content relevant</li>
+                   <li>Network and meet 100's of professionals and evaluate events and programming</li>
+               </span>
+           </div>
+       </section>
+       <section class="pad-left" id="clubs">
+           <div class="item pad-right" ; style="padding-bottom: 10px;">
+ 
+               <header>
+                   <h3 class="name" style="vertical-align:middle"><a
+                           href="https://www.facebook.com/frasernity">FRAת</a></h3>|<span class="position">Founder
+                   </span><span class="datePeriod" style="vertical-align:middle; margin-right: 15px">
+                       Sep 2015 - Jun 2020
+                   </span>
+               </header>
+               <span class="summary">
+                   <!-- <li>Formulate and define personas in group and architect programming to advance their specific journeys. -->
+                   <li>Founded and grew fraternity which hosted <br>~40 people for a weekly reflective discussions
+                   <li>Film, write, and publish social media content <br>on Facebook and Instagram with >1,500 views
+                       <!-- <li>Host bi-weekly formal meal for 12 people to foster community and engage in meaningful conversation. -->
+                   </li>
+               </span>
+           </div>
+       </section>
+</body>
+ 
+</html>
+<!-- <section class="item">
+  <span class="datePeriod pad-right">
+     Beit Shemesh, Israel | May 2015 - Jul 2015
+  </span>
+  <header>
+     <h3 class="name"><a href="http://www.themercava.com/app/">Mercava</a></h3> | &nbsp; Product Development Intern
+  </header>
+   <div class="summary">
+     <p>Mercava is an educational company focused on making Hebrew texts accessible, devising apps to teach Jewish concepts and joining resources to a unified platform.</p>
+  </div>
+  <ul class="highlights pad-right">
+     <li>Conceptualized, developed, and presented 2 sample games with storyboarding and Unity to demonstrate proof of concept for new learning products for students and donors.
+  <li>Improved company's pedagogy by 7 constructing PowerPoint and Google Slides presentations on prioritizing effective game mechanics and 21st century learning skills.
+  <li>Pitched donors on company strategy, long term goals, and competitive analysis on other companies in the space and how our company distinguishes itself in product vision.
+  </ul>
+  </section> -->
+<!-- <div class="item pad-right" style="padding-bottom: 10px;">
+  <header>
+  <span class="datePeriod pad-right">
+        Sep 2015 - Present
+     </span>
+     <h3 class="name"><a href="https://www.facebook.com/frasernity">FRAת</a></h3><br>
+  </header>
+  <span class="position">
+     Founder
+  </span><br>
+  <span class="summary pad-summary">
+    <li>Film, write and publish weekly videos with >1,500 average views<br> to share relevant & inspiring ideas on the upcoming Torah portion.</li>
+    <li>Hosted over 40 people weekly for a vibrant and active<br>discussion on Jewish ethics and its relation to our modern lives.</li>
+     <li>Founded & grew alternative Jewish product on campus to <br>transcend the bifurcated and institutionalized Jewish community.</li>
+     <li>Envisioned and built a new national brand for college<br>Judaism that is student run, crowd sourced and modern.</li>
+  </span>
+  </div> -->
+<!-- <div class="item pad-right";  style="padding-bottom: 10px;">
+  <header>
+     <h3 class="name"><a href="http://www.awakenu.org/">Awaken Ann Arbor</a></h3>
+     <span class="datePeriod">
+        Jan 2015 - Dec 2016
+     </span>
+  </header>
+  <span class="position">
+     Meditation & Discussion Leader
+  </span><br>
+  <span class="summary pad-summary">
+     <li>Conducted weekly mindfulness meditations, led focused <br>discussions on spirituality and purpose driven living for peers.</li>
+     <li>Developed curriculum and researched professors & community<br>members to come speak about what fosters spiritual growth.</li>
+  </span>
+  </div>
+  </section> -->
+<!-- <section class="pad-left" id="clubs">
+  <div class="item pad-right";  style="padding-bottom: 10px;">
+    <header>
+       <h3 class="name"><a href="http://www.tvaisrael.org/yeshivat-torah-vavodah.html">Yeshivat Torah V'Avodah</a></h3>
+       <span class="datePeriod">
+          Sept 2018 - Jun 2019
+       </span>
+    </header>
+    <span class="position">
+       Educator & Rabbinics Researcher
+    </span><br>
+    <span class="summary pad-summary">
+       <li>Prepared and taught weekly classes on Jewish Law & Modern Life and on Prayer & Growth and create engaging ways to convey material.</li>
+       <li>Researched Jewish law from classical and modern sources, commentators and responsa focused on marital & procreation laws.</li>
+       <li>Conducted 1:1 wellness and learning meetings to support college students growth and empower them to become their best selves.</li>
+    </span>
+  </div>
+   <br>  -->
+<!-- <strong>Course Highlights:</strong>
+  <ul class="highlights">
+    <li>EECS 482 &nbsp; - &nbsp; Introduction to Operating Systems</li>
+     <li>EECS 498 &nbsp; - &nbsp; Introduction to Distributed Systems</li>
+     <li>EECS 485 &nbsp; - &nbsp; Web Databases &amp; Information Systems</li>
+     <li>EECS 494 &nbsp; - &nbsp; Computer Game Design &amp; Development</li>
+  </ul> -->
+<!-- <section class="item">
+  <header>
+     <h3 class="name"><a href="https://www.facebook.com/MuJewUmich/?fref=ts">MuJew</a></h3>
+     <span class="datePeriod pad-right">
+        Dec 2015 - Dec 2017
+     </span>
+  </header>
+  <span class="position">
+     Co-President
+  </span><br> quantifying
+  <span class="summary pad-summary" >
+     <li>Networked to expand Michigan group to a movement with 6 other campuses and awarded funding to arrange national weekend retreat.</li>
+     <li>Led weekly dialogue sessions with Muslim and Jewish students<br>on a manifold of topics, planned cultural events and charitable works.</li>
+      <li>Mentored MuJew leaders on other campuses on growing <br>their chapter, navigating political divides and sparking ideas.</li>
+  </span>
+     <header>
+     <span class="datePeriod pad-right">
+       Sugar Grove, PA | Jul 2014 - Aug 2014
+     </span>
+        <h3 class="name"><a href="http://www.campstone.org/wp/about-camp/">Camp Stone</a></h3> | &nbsp; Team Leader</header>
+ 
+      </header>
+ 
+     <div class="summary">
+        <p>Camp Stone is an immersive learning environment where campers relive different time periods in Jewish history.</p>
+     </div>
+     <ul class="highlights pad-right">
+        <li>Conducted daily sessions for more than 80 campers to facilitate engaging learning activities and team building exercises.</li>
+        <li>Challenged team to identify our goals and decide on important topics and create innovative and engaging ways to meaningfully convey them.</li>
+     </ul>
+  </section> -->
+<!-- <section class="item" style="border-bottom: none;">
+  <span class="datePeriod pad-right">
+     New York, NY | Jul 2013 - Sep 2013
+  </span>
+  <header>
+     <h3 class="name"><a href="https://www.accenture.com/">Accenture</a></h3> | &nbsp; Summer Analyst
+  </header>
+ 
+ 
+  <div class="summary">
+     <p> Analyzed 400+ deals for smart grid team within the management consulting international group.</p>
+  </div>
+  <ul class="highlights pad-right">
+     <li>Optimized customer acquisition strategy by isolating the 3 weakest performing regions and researched the competition's strategies.</li>
+     <li>Compiled and presented professional PowerPoints on key data verticals to the international Smart Grid team and its leaders.</li>
+  </ul>
+  </section> -->
+<!-- <div class="item">
+  <div class="name">
+     Gaming
+  </div>
+  <div class="keywords">
+ 
+        GameSalad
+  </div>
+  </div>
+  -->
+<!--   <div class="item">
+  <header>
+     <h3 class="name"><a href="http://www.awakenu.org/">I-LEAD</a></h3>
+     <span class="datePeriod">
+        Dec 2014 - Jan 2016
+     </span>
+  </header>
+  <span class="position">
+     Programming Chair
+  </span>
+  <span class="summary">
+     <p>Researched topics relating to the history of and current events in Israel-Palestine and presented both sides of the issue to create a forum for information and dialogue.</p>
+  </span>
+  </div>-->
+<!--   <div class="item">
+  <header>
+     <h3 class="name"><a href="http://www.awakenu.org/">HaYerukim</a></h3>
+     <span class="datePeriod">
+        Sep 2014 - Jan 2016
+     </span>
+  </header>
+  <span class="position">
+     Head of Educational Content
+  </span>
+  <span class="summary">
+     <p>Spoke about the positive environmental impact of our events and informed others about the Jewish connection of the event.</p>
+  </span>
+  </div>-->
+<!-- <section class="item">
+  <header>
+  <span class="datePeriod pad-right">
+    Jerusalem, Israel | Sept 2018 - Current
+  </span>
+     <h3 class="name"><a href="http://www.tvaisrael.org/yeshivat-torah-vavodah.html">Yeshivat Torah V'Avodah</a></h3> | &nbsp; Teacher & Rabbinic Researcher</header>
+ 
+   </header>
+ 
+  <div class="summary">
+     <p>Yeshivat TVA is a religious seminary for post high school students to strengthen, challenge and improve their identity through engagement with classical Jewish sources.</p>
+  </div>
+  <ul class="highlights pad-right">
+     <li>Prepare & teach weekly classes on Jewish Law & Modern Life and on Prayer & Growth and create engaging ways to convey material.</li>
+     <li>Research Jewish law from classical and modern sources, commentators and responsae focused on marital and procreation laws.</li>
+  </ul>
+  </section> -->
+<!--    <h2>Leadership</h2><br>
+  <p class="pad-right"><strong> Fellowships: </strong>
+     <li><i>Jewish Ideas &amp; Ideals</i> - lead a monthly philosophical forum
+     <li><i>Kahal Fellowship</i></li>
+     <li><i>Orayta Campus Representative</i></li>
+  <br><br>
+  -->
+<!-- <div class="item pad-right" style="padding-bottom: 0px;">
+  <header>
+  <span class="datePeriod pad-right">
+        Aug 2013 - Present
+     </span>
+     <h3 class="name"><a href="http://goodst.org/">Good Street</a></h3><br>
+  </header>
+  <span class="position">
+     Founder &amp; Researcher
+  </span><br>
+  <span class="summary pad-summary">
+     <li>Market the vision, design the logo and research the new initiatives to invest our daily $130 charitable donation in.</li>
+     <li>Work on social media campaign to increase users' awareness<br>of the impact their combined money has had on the causes.</li>
+  </span>
+  </div> -->
+<!-- <div class="item pad-right">
+  <header>
+      <span class="datePeriod pad-right">
+        Jan 2015 - Present
+     </span>
+     <h3 class="name"><a href="https://www.facebook.com/ominyanumich/?ref=ts&fref=ts">O-Minyan</a></h3>
+ 
+  </header>
+  <span class="position">
+     Chair
+  </span><br>
+  <span class="summary pad-right">
+    <li>Responsible for organizing events and acclimating<br> freshmen into the community.</li>
+    <li>Speak three times a week about the upcoming<br> Bible portion, holiday and events in the community. </li>
+    <li>Earned three fellowships whose funds I use <br>towards community programming.</li>
+  </span>
+  </div> -->
+<!--
+  <div class="item">
+     <header>
+           <h3 class="name"><a href="http://www.knockknockgiveasock.org/about-us.html">Knock Knock Give A Sock</a></h3>
+     </header>
+     <span class="position">
+        Campus Activist
+     </span>
+     <span class="datePeriod pad-right">
+        Dec 2014 - Present
+     </span>
+ 
+     <span class="summary pad-right">
+        <li>Collected hundreds of socks and aligned different organizations to contribute to this project.</li>
+     </span>
+  </div>
+  -->
+<!--     <div class="item">
+  <header>
+        <h3 class="name"><a href="http://www.swipehunger.org/">Swipe Out Hunger</a></h3>
+  </header>
+  <span class="position">
+     Campus Representative
+  </span>
+  <span class="datePeriod pad-right">
+     Dec 2015 - Present
+  </span>
+ 
+  <span class="summary pad-right">
+     <p>Swipe Out Hunger advocates for universities to allow students to donate leftover swipes from their meal plan to food insecure individuals.
+        Joined with the Maize and Blue Cupboard to speak with <br> the dining hall program to help implement this program at Michigan. </p>
+  </span>
+  </div>-->
+<!-- <div class="item pad-right" style="padding-bottom: 0px;">
+  <header>
+  <span class="datePeriod pad-right">
+        Jun 2017 - Aug 2017
+     </span>
+     <h3 class="name"><a href="https://www.kolhanearim.org/">Kol HaNearim</a></h3><br>
+  </header>
+  <span class="position">
+     Coordinator &amp; Recruiter
+  </span><br>
+  <span class="summary pad-summary">
+     <li>Coordinated 13 programs for American volunteers to run <br>at an Israeli children's home that would enrich the lives of the kids.</li>
+     <li>Mediated cultural and linguistic differences between <br> 21 American volunteers and 67 youth at risk who live at the home.</li>
+  </span>
+  </div> -->
+<!-- <span>Rabbinic Ordination from Rabbi Zalman Nechemia Goldberg<br>
+  <span class="studyType">
+     Studied abroad at <strong>Hebrew University of Jerusalem</strong>
+      <br> on full merit scholarship through leadership fellowship -->
+<!-- <br> Full Merit Scholarship -->
+<!-- <br> -->
+<!-- <br><span>Learned: scrum, agile, story mapping, testing, MVP, desirability -->
+<!-- <strong>Course Highlights:</strong>
+  <ul class="highlights">
+    <li>EECS 498 &nbsp; - &nbsp; Introduction to Distributed Systems</li>
+    <li>EECS 482 &nbsp; - &nbsp; Introduction to Operating Systems</li>
+    <li>EECS 485 &nbsp; - &nbsp; Web Databases &amp; Information Systems</li>
+   <li>EECS 494 &nbsp; - &nbsp; Computer Game Design &amp; Development</li>
+  </ul> -->
+
